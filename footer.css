@@ -16,12 +16,14 @@
 .footer-text{
 	text-align: center;
 	font-size: 16px;
-	padding: 32px;
+	padding-left: 32px;
+	padding-right: 32px;
 }
 
 .footer-copyright{
 	text-align: center;
-	padding: 32px;
+	padding-left: 32px;
+	padding-right: 32px;
 }
 
 a:link {
