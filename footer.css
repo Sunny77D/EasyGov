@@ -1,0 +1,23 @@
+.footer-box {
+	display: flex;
+	position: absolute;
+  	bottom: 0;
+  	width:100%;
+  	height: 100px;
+	margin:auto;
+	background: #6cc091;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+
+}
+
+.footer-text{
+	text-align: center;
+	font-size: 16px;
+	padding-left: 55%;
+}
+
+.footer-copyright{
+	padding-left: 15%;
+}
