@@ -69,7 +69,7 @@ function guess(id, guess) {
 
 function redoQuiz() {
     var element = document.getElementById("quiz");
-    element.innerHTML = "<h1>Unemployment Qualification Test</h1><hr style=\"margin-bottom: 20px\"><p id=\"question\"></p><div class=\"buttons\"><button id=\"btn0\"><span id=\"choice0\"></span></button><button id=\"btn1\"><span id=\"choice1\"></span></button></div>";
+    element.innerHTML = "<h1>Unemployment Qualification Test</h1><p id=\"question\"></p><div class=\"buttons\"><button id=\"btn0\"><span id=\"choice0\"></span></button><button id=\"btn1\"><span id=\"choice1\"></span></button></div>";
 
     quiz = new Quiz(questions);
     populate();
