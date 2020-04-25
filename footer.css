@@ -8,6 +8,7 @@
 	background: #6cc091;
     text-align: center;
     color: #fff;
+    justify-content: center;
     align-items: center;
 
 }
@@ -15,9 +16,21 @@
 .footer-text{
 	text-align: center;
 	font-size: 16px;
-	padding-left: 55%;
+	padding-left: 32px;
+	padding-right: 32px;
 }
 
 .footer-copyright{
-	padding-left: 15%;
+	text-align: center;
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: solid white 1px;
 }
