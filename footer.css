@@ -34,3 +34,8 @@ a:link {
 a:hover {
 	border-bottom: solid white 1px;
 }
+
+a:visited{
+	color: white;
+	text-decoration: none;
+}
