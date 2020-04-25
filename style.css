@@ -1,19 +1,39 @@
 /** code by webdevtrick (https://webdevtrick.com) **/
 body {
     background-color: #413D3D;
-    height: 100vh;
+}
+
+.subpage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
 }
 
 .grid-container {
-    height: 70vh;
+    padding: 32px;
+    height: 100%;
+}
+
+.footer-container {
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    min-height: 100px;
+}
+
+.footer-container .footer-box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
  
 .grid {
     width: 70%;
-    margin: 32px auto;
+    margin: 0px auto;
     background-color: #fff;
-    padding: 16px;
     border: 2px solid black;
+    padding: 32px;
+    margin-top: 32px;
 }
  
 .grid h1 {
