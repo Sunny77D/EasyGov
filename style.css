@@ -1,6 +1,11 @@
 /** code by webdevtrick (https://webdevtrick.com) **/
 body {
     background-color: #413D3D;
+    height: 100vh;
+}
+
+.grid-container {
+    height: 70vh;
 }
  
 .grid {
