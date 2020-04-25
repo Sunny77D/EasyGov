@@ -2693,15 +2693,15 @@
 /* Header */
 
 	.subpage {
-		padding-top: 44px;
+		padding-top: 100px;
 	}
 
 		.subpage #header {
 			background: #6cc091;
 			top: 0;
-			height: 44px;
+			height: 100px;
 			line-height: 44px;
-			position: fixed;
+			position: absolute;
 		}
 
 	#header {
@@ -2720,6 +2720,9 @@
 		#header .inner {
 			margin: 0 auto;
 			position: relative;
+			top: 50%;
+  			-ms-transform: translateY(-50%);
+  			transform: translateY(-50%);
 		}
 
 		#header .logo {
