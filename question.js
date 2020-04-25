@@ -68,23 +68,30 @@ function guess(id, guess) {
     }
 };
  
- 
 function showProgress() {
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = document.getElementById("progress");
     element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
 };
+
+function redoQuiz() {
+    var element = document.getElementById("quiz");
+    element.innerHTML = "<h1>Unemployment Qualification Test</h1><hr style=\"margin-bottom: 20px\"><p id=\"question\"></p><div class=\"buttons\"><button id=\"btn0\"><span id=\"choice0\"></span></button><button id=\"btn1\"><span id=\"choice1\"></span></button></div><hr style=\"margin-top: 50px\"><footer><p id=\"progress\">Question x of y</p></footer>";
+
+    quiz = new Quiz(questions);
+    populate();
+}
  
 function results(title, text) {
     var gameOverHTML = "<h1>"+title+"</h1>";
-    gameOverHTML += "<h2 id='score'> "+text+"</h2><button><button>";
+    gameOverHTML += "<h2 id='score'> "+text+"</h2> <div class=\"buttons\"><center><button id=\"btn2\" onclick=\"redoQuiz(); \">Take the quiz again</button></center>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
 };
 
 function notQualified() {
     var gameOverHTML = "<h1>Not Qualified</h1>";
-    gameOverHTML += "<h2 id='score'> For more information: blah blah blah </h2><button id=\"clickMe\">Click heere<button><script>document.getElementById(\"clickMe\").onclick = doFunction;</script>";
+    gameOverHTML += "<h2 id='score'> For more information: blah blah blah </h2><div class=\"buttons\"><center><button id=\"btn2\" onclick=\"redoQuiz(); \">Take the quiz again</button></center>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
 };
