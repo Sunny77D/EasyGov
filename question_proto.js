@@ -4,7 +4,7 @@ function Quiz(questions) {
     this.questions = questions;
     this.questionIndex = 0;
 }
- 
+
 Quiz.prototype.getQuestionIndex = function() {
     return this.questions[this.questionIndex];
 }
@@ -20,11 +20,11 @@ Quiz.prototype.guess = function(answer, lang = "en") {
 
     this.questionIndex++;
 }
- 
+
 Quiz.prototype.isEnded = function() {
     return this.questionIndex === this.questions.length;
 }
- 
+
 function Question(text, choices, answer, title, descr) {
     this.text = text;
     this.choices = choices;
@@ -44,18 +44,18 @@ Question.prototype.getTitle = function() {
 Question.prototype.getText = function() {
     return this.descr;
 }
- 
+
 function populate(lang = "en") {
     if(quiz.isEnded()) {
         if (lang === "en"){
-            notQualified(); 
+            notQualified();
         } else {
-            notQualified("vi"); 
+            notQualified("vi");
         }
     } else {
         var element = document.getElementById("question");
         element.innerHTML = quiz.getQuestionIndex().text;
-        
+
         var choices = quiz.getQuestionIndex().choices;
         for(var i = 0; i < choices.length; i++) {
             var element = document.getElementById("choice" + i);
@@ -64,11 +64,11 @@ function populate(lang = "en") {
                 guess("btn" + i, choices[i]);
             } else {
                 guess("btn" + i, choices[i], "vi");
-            } 
-        } 
+            }
+        }
     }
 };
- 
+
 function guess(id, guess, lang="en") {
     var button = document.getElementById(id);
     button.onclick = function() {
@@ -77,7 +77,7 @@ function guess(id, guess, lang="en") {
             populate();
         } else {
             quiz.guess(guess,"vi");
-            populate("vi");  
+            populate("vi");
         }
     }
 };
@@ -197,7 +197,7 @@ function redoQuiz(state="NY") {
             break;
         case "OK":
             quiz = new Quiz(ok);
-            break;        
+            break;
         case "OR":
             quiz = new Quiz(or);
             break;
@@ -242,7 +242,7 @@ function redoQuiz(state="NY") {
             break;
         default:
             quiz = new Quiz(nj);
-      } 
+      }
 
     populate();
 }
@@ -290,14 +290,14 @@ function chooseState() {
     var element = document.getElementById("quiz");
 
     var buttons = ''
-    
+
     for (var i = 0; i < states.length; i++) {
         buttons += "<button id=\"btn0\" onclick=\"redoQuiz('" + states[i] + "');\"><span id=\"choice1\">" + states[i] + "</span></button>";
     }
 
     element.innerHTML = "<h1>Unemployment Qualification Test</h1><p id=\"question\">Select your state</p><div class=\"buttons\">" + buttons + "</div>";
 }
- 
+
 function results(title, text,lang="en") {
     var gameOverHTML = "<h1>"+title+"</h1>";
     if(lang==="en"){
@@ -331,7 +331,7 @@ var covid19Viet = [
 var baseViet = [
     new Question("Bạn đã bị sa thải khỏi công việc của bạn hoặc bạn đã bỏ công việc của bạn?", ["Đúng", "Không"], "Đúng", "Không chất lượng", "Bạn sẽ cần được xem xét bởi một giám khảo yêu cầu thông qua một cuộc phỏng vấn tìm hiểu thực tế. Chủ lao động của bạn cũng có thể được liên lạc và người kiểm tra sẽ xác định tư cách của bạn."),
     new Question("Bạn đang tích cực tìm kiếm việc làm và bạn có sẵn sàng cho công việc?", ["Đúng", "Không"], "Đúng", "Không chất lượng", "Bạn phải tìm kiếm việc làm để đủ điều kiện nhận trợ cấp thất nghiệp."),
-    new Question("Trong vòng 5 quí vừa qua, anh/chị có kiếm được nhiều hơn X đôla không?", ["Đúng", "Không"], "Không", "Không chất lượng", "Nếu bạn không đáp ứng yêu cầu thu nhập tối thiểu, bạn không đủ điều kiện nhận trợ cấp thất nghiệp."),
+    new Question("Trong vòng 4 của 5 quí vừa qua, anh/chị có kiếm được nhiều hơn $10,000 đôla không?", ["Đúng", "Không"], "Không", "Không chất lượng", "Nếu bạn không đáp ứng yêu cầu thu nhập tối thiểu, bạn không đủ điều kiện nhận trợ cấp thất nghiệp."),
     ];
 
 var covid19 = [
