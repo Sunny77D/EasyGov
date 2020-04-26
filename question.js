@@ -84,7 +84,7 @@ function results(title, text) {
 
 function notQualified() {
     var gameOverHTML = "<h1>Not Qualified</h1>";
-    gameOverHTML += "<h2 id='score'> For more information: blah blah blah </h2><div class=\"buttons\"><center><button id=\"btn2\" onclick=\"redoQuiz(); \">Take the quiz again</button></center>";
+    gameOverHTML += "<h2 id='score'>Unfortunately, you are not qualified to receive unemployment benefits in your state. </h2><div class=\"buttons\"><center><button id=\"btn2\" onclick=\"redoQuiz(); \">Take the quiz again</button></center>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
 };
