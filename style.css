@@ -7,11 +7,21 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column; 
+    background: #fff
+}
+
+.intro-container {
+    text-align: center;
+    padding-top: 32px;
+    width: 50%;
+    transform: translateX(50%);
 }
 
 .grid-container {
     padding: 32px;
+    padding-bottom: 64px;
     height: 100%;
+    text-align: center;
 }
 
 .footer-container {
