@@ -21,10 +21,22 @@ body {
     align-content: center;
 }
 
+.questions-container .horizontal-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .form-title {
     text-align: center;
     font-size: 2em;
     color: #555;
+}
+
+.section-title {
+    font-size: 1.5em;
+    color: #555;
+    padding: 16px 16px 0px 16px;
 }
 
 .question {
@@ -38,10 +50,6 @@ body {
     margin: 0 auto;
     border-bottom: 1px solid grey;
     padding: 8px;
-}
-
-input[type="date"] {
-    width: 30%;
 }
 
 label {
