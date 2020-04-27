@@ -1808,6 +1808,11 @@
 				font-size: 1em;
 			}
 
+				#wrap-tighter {
+					padding-left: 14em;
+					padding-right: 14em;
+				}
+
 		section.wrapper article header, article.wrapper article header {
 			margin: 0;
 		}
@@ -3298,6 +3303,200 @@
     @media screen and (max-width: 480px) {
 
         #banner-2 h1 {
+            font-size: 1.5em;
+        }
+
+	}
+	
+/* banner-3 */
+
+#banner-3 {
+    padding: 0 0 9em 0;
+    background-image: url(../../images/banner3.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+
+    #banner-3:before {
+        content: '';
+        background: rgba(75, 75, 93, 0.85);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    #banner-3 .inner {
+        border-top: 2px solid rgba(255, 255, 255, 0.2);
+        position: relative;
+        z-index: 10005;
+        padding-top: 8em;
+    }
+
+    #banner-3 h1 {
+        font-size: 3.5em;
+        font-weight: 400;
+        color: #fff;
+        line-height: 1em;
+        margin: 0 0 1em 0;
+        padding: 0;
+    }
+
+    #banner-3 h3 {
+        font-weight: 400;
+        color: #fff;
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    #banner-3 .icon {
+        color: #6cc091;
+        font-size: 2em;
+    }
+
+    #banner-3 p {
+        font-size: 1em;
+        color: rgba(255, 255, 255, 0.55);
+        margin-bottom: 1.75em;
+    }
+
+    #banner-3 .flex {
+        -ms-flex-pack: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto 4em auto;
+    }
+
+        #banner-3 .flex div {
+            border-right: 2px solid rgba(255, 255, 255, 0.2);
+            padding: 0 8em;
+        }
+
+            #banner-3 .flex div:last-child {
+                border: none;
+                padding-right: 0;
+            }
+
+            #banner-3 .flex div:first-child {
+                padding-left: 0;
+            }
+
+            #banner-3 .flex div p {
+                margin: 0;
+            }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+        #banner-3 {
+            background-attachment: scroll;
+        }
+
+    }
+
+    @media screen and (max-width: 1680px) {
+
+        #banner-3 .flex div {
+            padding: 0 6em;
+        }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+
+        #banner-3 {
+            padding: 0 0 6em 0;
+        }
+
+            #banner-3 .inner {
+                padding-top: 6em;
+            }
+
+            #banner-3 h1 {
+                font-size: 3em;
+            }
+
+            #banner-3 h3 {
+                font-size: 1.25em;
+            }
+
+            #banner-3 .flex div {
+                padding: 0 3em;
+            }
+
+    }
+
+    @media screen and (max-width: 980px) {
+
+        #banner-3 {
+            background-attachment: scroll;
+            padding: 0 0 4em 0;
+        }
+
+            #banner-3 .inner {
+                padding-top: 4em;
+            }
+
+            #banner-3 h1 {
+                font-size: 2.5em;
+            }
+
+            #banner-3 h3 {
+                font-size: 1.25em;
+            }
+
+            #banner-3 .flex div {
+                font-size: .85em;
+                padding: 0 1.5em;
+            }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        #banner-3 {
+            padding: 0 0 3em 0;
+        }
+
+            #banner-3 .inner {
+                padding-top: 3em;
+            }
+
+            #banner-3 h1 {
+                font-size: 2em;
+            }
+
+            #banner-3 h3 {
+                font-size: 1.25em;
+            }
+
+            #banner-3 .flex {
+                -moz-flex-direction: column;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                margin: 0 auto 2em auto;
+            }
+
+                #banner-3 .flex div {
+                    font-size: .85em;
+                    padding: 0;
+                    border: none;
+                    margin-bottom: 1em;
+                }
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+        #banner-3 h1 {
             font-size: 1.5em;
         }
 
