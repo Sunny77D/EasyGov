@@ -1,0 +1,49 @@
+/** code by webdevtrick (https://webdevtrick.com) **/
+body {
+    background-color: #413D3D;
+}
+
+.subpage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    background: #fff;
+}
+
+.questions-container {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    width: 80%;
+    margin: 64px auto;
+    border: 1px solid black;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 2em;
+    color: #555;
+}
+
+.question {
+    font-size: 1.25em;
+    padding: 16px;
+}
+
+.line {
+    height: 0px;
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: 1px solid grey;
+    padding: 8px;
+}
+
+input[type="date"] {
+    width: 30%;
+}
+
+label {
+    margin-bottom: 16px;
+}
