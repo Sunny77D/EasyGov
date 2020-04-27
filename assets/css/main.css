@@ -1892,6 +1892,10 @@
 		width: 100%;
 	}
 
+		.flex article {
+			padding: 16px;
+		}
+
 		.flex.flex-2 {
 			-moz-justify-content: space-between;
 			-webkit-justify-content: space-between;
