@@ -7,11 +7,21 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column; 
+    background: #fff
+}
+
+.intro-container {
+    text-align: center;
+    padding-top: 32px;
+    width: 50%;
+    transform: translateX(50%);
 }
 
 .grid-container {
     padding: 32px;
+    padding-bottom: 64px;
     height: 100%;
+    text-align: center;
 }
 
 .footer-container {
@@ -69,6 +79,11 @@ body {
     text-align: center;
     padding-bottom: 32px;
 }
+
+.buttons button {
+    margin: 8px 12px 8px 12px;
+}
+
  
 .quiz-button:hover {
     cursor: pointer;
@@ -88,4 +103,16 @@ body {
 .line {
     border: 0;
     border-bottom: solid 1px #dbdbdb;
+}
+
+@media screen and (max-width: 1000px) {
+    #quiz h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #quiz h1 {
+        font-size: 32px;
+    }
 }
