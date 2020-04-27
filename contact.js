@@ -6,13 +6,13 @@ function Message(name, email, message) {
 
 $(document).ready(function() {
     $('form').submit(function(e) {
-        e.preventDefault()
-        name = $('#name').val()
-        email = $('#email').val()
-        message = $('#message').val()
-        const contact = new Message(name, email, message)
-        console.log(contact)
+        e.preventDefault();
+        name = $('#name').val();
+        email = $('#email').val();
+        message = $('#message').val();
+        const contact = new Message(name, email, message);
+        console.log(contact);
 
-        $('#sent').html('<p>Your message has been sent!</p>')
+        $('#sent').html('<p>Your message has been sent!</p>');
     });
 });
