@@ -82,7 +82,12 @@ body {
 
 .buttons button {
     margin: 8px 12px 8px 12px;
-    overflow-wrap: break-word;
+    width: auto;
+    height: auto;
+    line-height: 2em;
+    white-space: normal;
+    max-width: 90%;
+    padding: 0px 32px;
 }
 
  
@@ -146,6 +151,6 @@ body {
         padding: 16px;
     }
     .buttons button {
-        padding: 0px 24px;
+        padding: 8px 24px;
     }
 }
