@@ -111,8 +111,11 @@ body {
     }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 740px) {
     #quiz h1 {
-        font-size: 32px;
+        font-size: 28px;
+    }
+    .grid {
+        width: 90%;
     }
 }
